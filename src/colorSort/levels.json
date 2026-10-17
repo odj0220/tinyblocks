@@ -1,0 +1,10 @@
+[
+  { "id": 1, "capacity": 3, "timeLimit": 60, "tubes": [["R","Y","R"],["Y","R","Y"],[]] },
+  { "id": 2, "capacity": 3, "timeLimit": 60, "tubes": [["R","B","Y"],["Y","R","B"],["B","Y","R"],[],[]] },
+  { "id": 3, "capacity": 4, "timeLimit": 75, "tubes": [["R","Y","R","Y"],["Y","R","Y","R"],[],[]] },
+  { "id": 4, "capacity": 4, "timeLimit": 90, "tubes": [["R","B","Y","R"],["Y","R","B","B"],["B","Y","R","Y"],[],[]] },
+  { "id": 5, "capacity": 4, "timeLimit": 100, "tubes": [["G","R","B","Y"],["Y","G","R","B"],["B","Y","G","R"],["R","B","Y","G"],[],[]] },
+  { "id": 6, "capacity": 4, "timeLimit": 110, "tubes": [["R","G","G","B"],["Y","B","R","Y"],["G","R","Y","B"],["B","Y","G","R"],[],[]] },
+  { "id": 7, "capacity": 4, "timeLimit": 130, "tubes": [["R","P","B","Y"],["G","R","P","B"],["Y","G","R","P"],["B","Y","G","R"],["P","B","Y","G"],[],[]] },
+  { "id": 8, "capacity": 4, "timeLimit": 150, "tubes": [["P","Y","R","G"],["B","G","P","R"],["Y","R","B","P"],["G","B","Y","Y"],["R","P","G","B"],[],[]] }
+]
