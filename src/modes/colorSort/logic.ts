@@ -1,11 +1,11 @@
+import type { BaseLevel } from '../types';
+
 export type Color = 'R' | 'Y' | 'B' | 'G' | 'P' | 'O';
 /** 각 튜브는 아래 → 위 순서의 블록 배열 */
 export type Tube = Color[];
 
-export type Level = {
-  id: number;
+export type Level = BaseLevel & {
   capacity: number;
-  timeLimit: number;
   tubes: Tube[];
 };
 
@@ -39,12 +39,4 @@ export function isTubeDone(tube: Tube, capacity: number): boolean {
 
 export function isSolved(tubes: Tube[], capacity: number): boolean {
   return tubes.every((t) => t.length === 0 || isTubeDone(t, capacity));
-}
-
-/** 남은 시간 비율로 별 1~3개 */
-export function starsFor(timeLeft: number, timeLimit: number): number {
-  const ratio = timeLeft / timeLimit;
-  if (ratio >= 0.5) return 3;
-  if (ratio >= 0.25) return 2;
-  return 1;
 }
