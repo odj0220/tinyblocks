@@ -8,7 +8,8 @@
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.odj0220.tinyblocks"
     },
     "android": {
       "adaptiveIcon": {
@@ -17,7 +18,8 @@
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.odj0220.tinyblocks"
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -25,6 +27,13 @@
     "plugins": [
       "expo-status-bar",
       "expo-router"
-    ]
+    ],
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "98e2df1f-0a50-4c4e-bbc0-d08447ea4641"
+      }
+    },
+    "owner": "djoh"
   }
 }
